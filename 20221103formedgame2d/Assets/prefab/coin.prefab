@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 6669148430805582574}
   - component: {fileID: 618172549737318921}
   - component: {fileID: 1644581541488587348}
-  m_Layer: 0
+  - component: {fileID: -1294958801509967675}
+  - component: {fileID: 8810020221518067259}
+  - component: {fileID: 1295057961548796952}
+  m_Layer: 8
   m_Name: coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,3 +104,50 @@ CircleCollider2D:
   m_Offset: {x: 0.15, y: 0}
   serializedVersion: 2
   m_Radius: 1.99
+--- !u!50 &-1294958801509967675
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729875351916975821}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!247 &8810020221518067259
+ConstantForce2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729875351916975821}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0}
+  m_RelativeForce: {x: 12, y: 0}
+  m_Torque: 0
+--- !u!114 &1295057961548796952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729875351916975821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33cb2717f4e83934c8623f0746282ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameTarget: girl
+  nameTarget2: 
+  prefabExplosion: {fileID: 8535349765114441856, guid: 319a3929a80a63d41af29083731dc080, type: 3}

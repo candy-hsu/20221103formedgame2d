@@ -15,12 +15,15 @@ namespace Uzai
        
         [Header("圖片")]
         [SerializeField]
-        private Sprite stop;
+        private AnimationClip stop;
         [SerializeField]
         private AnimationClip girlaim;
+        
 
-        [SerializeField, Header("圖片渲染元件")]
-        private SpriteRenderer spr;
+        [SerializeField, Header("動畫元件")]
+        private Animator ainma;
+
+        
 
         private void Update()
         {
@@ -30,11 +33,11 @@ namespace Uzai
 
             transform.Translate(speedHorizontal * Time.deltaTime * h, speedVertical * Time.deltaTime * v, 0);
 
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-           
-            }
+            
+            
         }
+
+       
     }
 }
 
