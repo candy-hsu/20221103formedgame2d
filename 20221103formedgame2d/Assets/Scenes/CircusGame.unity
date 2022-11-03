@@ -730,6 +730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1340351862}
   - component: {fileID: 1340351861}
+  - component: {fileID: 1340351863}
   m_Layer: 0
   m_Name: bg
   m_TagString: Untagged
@@ -804,6 +805,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1340351863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340351860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 514c7d87c968a45449c582186a39c4f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -3.5
 --- !u!1 &1386275019
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +831,7 @@ GameObject:
   - component: {fileID: 1386275020}
   - component: {fileID: 1386275024}
   - component: {fileID: 1386275023}
+  - component: {fileID: 1386275025}
   m_Layer: 0
   m_Name: circus_shoot1
   m_TagString: Untagged
@@ -948,6 +963,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1386275025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386275019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc50ca3f4a85fe4f950e424eb2f4197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedVertical: 3.5
+  speedHorizontal: 4
+  stop: {fileID: 21300000, guid: eb3228f05adb177418d5800560ff713c, type: 3}
+  girlaim: {fileID: 7400000, guid: 5bc1e9c6995f89c4c8ba01b40d3bc97a, type: 2}
 --- !u!1 &1903461773
 GameObject:
   m_ObjectHideFlags: 0
