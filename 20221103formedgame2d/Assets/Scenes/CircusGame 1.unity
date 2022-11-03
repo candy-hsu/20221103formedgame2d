@@ -979,6 +979,7 @@ MonoBehaviour:
   speedHorizontal: 4
   stop: {fileID: 21300000, guid: eb3228f05adb177418d5800560ff713c, type: 3}
   girlaim: {fileID: 7400000, guid: 5bc1e9c6995f89c4c8ba01b40d3bc97a, type: 2}
+  spr: {fileID: 1386275021}
 --- !u!1 &1903461773
 GameObject:
   m_ObjectHideFlags: 0

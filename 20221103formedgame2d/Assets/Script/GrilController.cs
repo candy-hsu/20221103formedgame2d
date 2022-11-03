@@ -18,6 +18,23 @@ namespace Uzai
         private Sprite stop;
         [SerializeField]
         private AnimationClip girlaim;
+
+        [SerializeField, Header("圖片渲染元件")]
+        private SpriteRenderer spr;
+
+        private void Update()
+        {
+            float v = Input.GetAxis("Vertical");
+
+            float h = Input.GetAxis("Horizontal");
+
+            transform.Translate(speedHorizontal * Time.deltaTime * h, speedVertical * Time.deltaTime * v, 0);
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+           
+            }
+        }
     }
 }
 
