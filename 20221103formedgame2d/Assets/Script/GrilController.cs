@@ -36,6 +36,8 @@ namespace Uzai
         [SerializeField]
         private GameObject s2;
 
+        
+
 
 
         private void Update()
@@ -44,7 +46,7 @@ namespace Uzai
 
             float h = Input.GetAxis("Horizontal");
 
-            transform.Translate(speedHorizontal * Time.deltaTime * h, speedVertical * Time.deltaTime * v, 0);
+           
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
