@@ -5,11 +5,11 @@ namespace Uzai
     /// <summary>
     /// 敵人射擊
     /// </summary>
-    public class MonkeyFireSystem : FireSystem
+    public class MonkeyFireSystem : FireGSystem
     {
-        [SerializeField, Header("生成間隔"), Range(0, 3)]
+        [SerializeField, Header("生成間隔"), Range(0, 10)]
         private float interval = 1.5f;
-        [SerializeField, Header("時間"), Range(0, 30)]
+        [SerializeField, Header("時間"), Range(0, 100)]
         private float delaytime ;
         private float clock = 0;
         private bool isStart = false;
@@ -37,7 +37,7 @@ namespace Uzai
         private void setStar()
         {
             
-            if( isStart==true && a==true)
+            if( isStart==true && a==true) 
             {
                 InvokeRepeating("SpawnBullet", 0, interval);
             }

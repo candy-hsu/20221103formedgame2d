@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: -1294958801509967675}
   - component: {fileID: 8810020221518067259}
   - component: {fileID: 1295057961548796952}
+  - component: {fileID: 427977028370133024}
+  - component: {fileID: -873004934701195376}
   m_Layer: 8
   m_Name: coin
   m_TagString: Untagged
@@ -151,3 +153,29 @@ MonoBehaviour:
   nameTarget: girl
   nameTarget2: 
   prefabExplosion: {fileID: 8535349765114441856, guid: 319a3929a80a63d41af29083731dc080, type: 3}
+--- !u!114 &427977028370133024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729875351916975821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083e6ffd37229bb41a700660e43f20b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-873004934701195376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729875351916975821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06e98fb86c1954488aa8aab21cfeb07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 0}
+  ShowScore: {fileID: 0}

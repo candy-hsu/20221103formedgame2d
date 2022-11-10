@@ -1,5 +1,6 @@
 ﻿
 using UnityEngine;
+using UnityEngine.SceneManagement;
 namespace Uzai
 {
     /// <summary>
@@ -36,7 +37,8 @@ namespace Uzai
         [SerializeField]
         private GameObject s2;
 
-        
+
+
 
 
 
@@ -45,16 +47,19 @@ namespace Uzai
             float v = Input.GetAxis("Vertical");
 
             float h = Input.GetAxis("Horizontal");
-            
-           
+
+            transform.Translate(speedHorizontal * Time.deltaTime * h, speedVertical * Time.deltaTime * v, 0);
+
+
+
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            print(collision.gameObject.tag);
+            print(collision.gameObject.tag);//將monkey和star設tag
             //print(namef);
             //print(collision.gameObject.name.Contains(namef));
-            if (collision.gameObject.tag == "lostheart")   
+            if (collision.gameObject.tag == "lostheart")
 
             {
 
@@ -96,11 +101,17 @@ namespace Uzai
 
                 }
 
+                if (HeartNum == 0)
+                {
+                    SceneManager.LoadScene("Lose");
+                }
             }
         }
+
     }
-
-
 }
+
+
+
 
 
