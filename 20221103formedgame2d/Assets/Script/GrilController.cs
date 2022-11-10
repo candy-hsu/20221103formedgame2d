@@ -45,21 +45,23 @@ namespace Uzai
             float v = Input.GetAxis("Vertical");
 
             float h = Input.GetAxis("Horizontal");
-
+            
            
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-
-            if (collision.gameObject.name == "namef")
+            print(collision.gameObject.tag);
+            //print(namef);
+            //print(collision.gameObject.name.Contains(namef));
+            if (collision.gameObject.tag == "lostheart")   
 
             {
 
                 Destroy(collision.gameObject);
-
+                //print("Star destroyed");
                 HeartNum = HeartNum - 1;
-
+                print("愛心數量=" + HeartNum);
 
 
                 //根據愛心數量，顯示愛心圖案
