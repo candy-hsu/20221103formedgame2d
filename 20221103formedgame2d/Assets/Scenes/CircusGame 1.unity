@@ -1951,6 +1951,8 @@ GameObject:
   - component: {fileID: 1386275025}
   - component: {fileID: 1386275026}
   - component: {fileID: 1386275028}
+  - component: {fileID: 1386275029}
+  - component: {fileID: 1386275030}
   m_Layer: 3
   m_Name: girl
   m_TagString: Untagged
@@ -2138,6 +2140,32 @@ RotationConstraint:
   m_Sources:
   - sourceTransform: {fileID: 1386275022}
     weight: 0
+--- !u!114 &1386275029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386275019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083e6ffd37229bb41a700660e43f20b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1386275030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386275019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06e98fb86c1954488aa8aab21cfeb07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameTarget: coin
+  ShowScore: {fileID: 1395883714}
 --- !u!1 &1395883712
 GameObject:
   m_ObjectHideFlags: 0
@@ -2163,7 +2191,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395883712}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2173,7 +2201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 430, y: 167}
+  m_AnchoredPosition: {x: 435, y: 167}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1395883714
